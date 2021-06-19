@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html">HOME</a>
+    </header>
+    <main>
+        <form action="" method="">
+            <fieldset>
+                <legend>Complete formulario de contacto</legend>
+                <label for="nombre">Nombre y Apellido:</label><!--relaciona con el for con el id(los id deben ser unicos)-->
+                <input type="text" placeholder="ingrese su nombre" id="nombre"><!--ingresar datos de texto de una sola linea-->
+                <br>
+                <br>
+                <label for="e-mail">E-mail:</label>
+                <input type="email" placeholder="e-mail" id="e-mail">
+                <br>
+                <br>
+                <label for="edad">Edad:</label>
+                <input type="number" placeholder="edad" id="edad"><!--ingresar datos numericos-->
+                <br>
+                <br>
+                <label for="newslater">Newslater:</label>
+                Yes<input type="radio" name="newslater" id="newslater"><!--mismo name requerido-->
+                No<input type="radio" name="newslater" id="newslater">
+                <br>
+                <br>
+                <label for="pais">Pais</label>
+                <select name="pais" id="pais">
+                    <option value="argentina">Argentina</option>
+                    <option value="otro">otro</option>
+                </select>
+                <br>
+                <br>
+                <label for="consulta">Consulta:</label>
+                <br>
+                <br>
+                <textarea name="consulta" id="consulta" cols="100" rows="10" placeholder="ingrese su consulta"></textarea><!--contenido multilinea-->
+                <br>
+                <br>
+                <input type="submit" value="Enviar"><!--boton para enviar formulario-->
+                <br>
+                <br>
+                <input type="reset" value="Resetear formulario"><!--resetear los campos-->
+            </fieldset>
+    </main>
+</body>
+</html>

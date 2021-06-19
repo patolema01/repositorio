@@ -1,0 +1,181 @@
+/*cosas generales*/
+h1{
+    margin: 0px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    font-style: normal;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+ul li {
+    background-color: greenyellow;
+    height: 100%;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;    
+    text-decoration: none;
+    border-bottom-style:solid;
+    border-bottom-color: black;
+    border-radius: 2px;
+}
+/*css mottogreens.html*/
+
+
+
+
+
+
+
+
+
+
+#quienessomos{
+    background-color: greenyellow;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mottogreens{
+    font-style: normal;
+    background-color: greenyellow;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area:b2;
+}
+
+#mgrpage{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 250px 1000px 150px;
+    grid-template-areas:"a1"
+                        "a2"
+                        "a3";
+}
+#headermgr{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+    grid-template-areas: "b1 b2";
+}
+/*css index.html*/
+#bodyidx{
+    height: 1080px;
+}
+#headeridx{
+    height: 20%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 67%;
+    grid-template-areas:"navidx"
+                        "h1idx";
+}
+#h1idx{
+    font-size: 70px;
+    grid-area: h1idx;
+    text-align: center;
+    transition:2s;
+}
+#h1idx:hover{
+    transform:skew(1);
+}
+#navidx{
+    grid-area: navidx;
+}
+#ulidx{
+    display: flex;
+    padding: 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.liidx{
+    background-color: rgba(9, 255, 0, 0.815);
+    text-decoration: none;
+    border-left:solid 3px black;
+    border-bottom-style:none;
+}
+#logomgidx{
+    text-align: center;
+    transition: 1s;
+}
+#logomgidx:hover{
+    transform: rotateZ(-45deg);
+}
+#mainidx{
+    height: 80%;
+    background-image: linear-gradient(to bottom, greenyellow, green);
+}
+#dividx{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width:600px) {
+    #bodyidx{
+        height: 800px;
+    }
+    #headeridx{
+        height: 20%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows:  100%;
+        grid-template-areas:" navidx h1idx";
+    }
+    #h1idx{
+        font-size: 50px;
+        grid-area: h1idx;
+        text-align: center;
+    }
+    #navidx{
+        grid-area: navidx;
+    }
+    #ulidx{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .liidx{
+        background-color: rgba(47, 180, 105, 0.781);
+        text-decoration: none;
+        border-left:none;
+        border-bottom: solid black;
+    }
+    #logomgidx{
+        text-align: center;
+        transition: 1s;
+    }
+    #logomgidx:hover{
+        transform: rotateZ(-45deg);
+    }
+    #mainidx{
+        height: 80%;
+        background-image: linear-gradient(to right, green, greenyellow);
+        
+    }
+    #dividx{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
